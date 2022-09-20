@@ -6,81 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turkey</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
 </head>
 <body> 
-    <div><img class="img-logo" src="travel logo.png" alt="Travel Logo" style="width:250px;height:100px">
-        <button type="button" style="float: right;">Search</button>
-        <input type="text" placeholder="Search" style="float: right;" >
+    
+    <div><img class="img-logo" src="travel-logo.png" alt="Travel Logo" style="width:430px;height:100px">
+        <button type="button" style="float: right;" onclick="doSearch(document.getElementById('inputsearch').value)">Search</button>
+        <input id="inputsearch" type="text" placeholder="Search" style="float: right;" >
     </div>
 
     <div class="navbar">
-        <a class="link" href="index.html">Main Page</a>
+        <a class="link" href="index.html">Home</a>
 
         <div class="dropdown">
             <button class="dropbtn"><a href="turkey.html">Turkey</a></button>
             <div class="dropdown-content">
-                    <a href="#Istanbul">Istanbul</a>
-                    <a href="#Izmir">Izmir</a>
-                    <a href="#Antalya">Antalya</a>
-                    <a href="#Nevsehir">Nevsehir</a>
-                    <a href="#Mugla">Mugla</a>
+                    <a href="turkey.html#Istanbul">Istanbul</a>
+                    <a href="turkey.html#Izmir">Izmir</a>
+                    <a href="turkey.html#Antalya">Antalya</a>
+                    <a href="turkey.html#Nevsehir">Nevsehir</a>
+                    <a href="turkey.html#Mugla">Mugla</a>
             </div>
         </div>
 
         <div class="dropdown">
             <button class="dropbtn"><a href="france.html">France</a></button>
             <div class="dropdown-content">
-                <a href="#Paris">Paris</a>
-                <a href="#Nice">Nice</a>
-                <a href="#Versailles">Versailles</a>
-                <a href="#Bordeaux">Bordeaux</a>
-                <a href="#Marseilles">Marseilles</a>
+                <a href="france.html#Paris">Paris</a>
+                <a href="france.html#Nice">Nice</a>
+                <a href="france.html#Versailles">Versailles</a>
+                <a href="france.html#Bordeaux">Bordeaux</a>
+                <a href="france.html#Marseilles">Marseilles</a>
             </div>
         </div>
 
          <div class="dropdown">
             <button class="dropbtn"><a href="italy.html">Italy</a></button>
             <div class="dropdown-content">
-                <a href="#Rome">Rome</a>
-                <a href="#Venice">Venice</a>
-                <a href="#Florence">Florence</a>
-                <a href="#Milan">Milan</a>
-                <a href="#Capri">Capri</a>
+                <a href="italy.html#Rome">Rome</a>
+                <a href="italy.html#Venice">Venice</a>
+                <a href="italy.html#Florence">Florence</a>
+                <a href="italy.html#Milan">Milan</a>
+                <a href="italy.html#Capri">Capri</a>
             </div>
         </div>
 
         <div class="dropdown">
             <button class="dropbtn"><a href="theUSA.html">The USA</a></button>
             <div class="dropdown-content">
-                <a href="#NewYorkCity">New York City</a>
-                <a href="#LasVegas">Las Vegas</a>
-                <a href="#SanFrancisco">San Francisco</a>
-                <a href="#Washington">Washington, D.C.</a>
-                <a href="#LosAngeles">Los Angeles</a>
-                <a href="#Miami">Miami</a>
+                <a href="theUSA.html#NewYorkCity">New York City</a>
+                <a href="theUSA.html#LasVegas">Las Vegas</a>
+                <a href="theUSA.html#SanFrancisco">San Francisco</a>
+                <a href="theUSA.html#Washington">Washington, D.C.</a>
+                <a href="theUSA.html#LosAngeles">Los Angeles</a>
+                <a href="theUSA.html#Miami">Miami</a>
             </div>
         </div>
+        <a class="link" href="contact-us.html">Contact Us</a>
     </div>
 
 
     <div>
         <p class="explanation">Packed to the brim with ancient monuments left over from a parade of empires, and endowed with showcase scenery 
             that never fails to impress, Turkey is a dazzling destination that straddles Asia and Europe.</p>
-        <p>Turkey offers a wealth of different kinds of destinations to travelers. 
+        <p class="explanation">Turkey offers a wealth of different kinds of destinations to travelers. 
             From the dome and minaret filled skyline of Istanbul to the Roman ruins along the western and southern coasts, 
             from the beaches of Antalya and the Mediterranean seaside resorts to the misty mountains of Eastern Black Sea. 
             With so many amazing destinations  some great tourist attractions in Turkey out. 
             So consider this list of destinations as just the start of a great holiday in Turkey.</p>
-        <p>Its vibrant culture, famous food, and vast history wow all who venture here, while its glorious landscapes, 
+        <p class="explanation">Its vibrant culture, famous food, and vast history wow all who venture here, while its glorious landscapes, 
             from the sun-soaked Mediterranean to the mighty mountains and arid steppe, are tourist attractions in themselves.</p>
-        <p>Whether you want to lap up the Byzantine and Ottoman glories of Istanbul on a city break, 
+        <p class="explanation">Whether you want to lap up the Byzantine and Ottoman glories of Istanbul on a city break, 
             laze on the beach, delve into history wandering through ruins such as Ephesus, or see some of the world's most surreal 
             panoramas in Pamukkale and Cappadocia, this country offers visitors a wide range of things to do.</p>
     </div>
 
     <div>
         <div class="popular-place">
-            <ul> <h4>The Most Popular Places in Turkey</h4>
+            <ul id="myUL"> <h4>The Most Popular Places in Turkey</h4>
                 <li>Istanbul - Bosphorus</li>
                 <li>Istanbul - Hagia Sophia</li>
                 <li>Istanbul - Girl Tower</li>
@@ -127,23 +130,23 @@
         <div>
             <div id="Istanbul">
                 <h2>ISTANBUL</h2>
-                <p>Istanbul is a magical composition of two continents. And especially the Bosphorus, 
+                <p class="explanation">Istanbul is a magical composition of two continents. And especially the Bosphorus, 
                     Istanbul Strait will cheer up your hearts. Aside from being the largest and most popular city of Turkey, 
                     Istanbul is also the biggest cultural and financial center of Turkey. 
                     Istanbul is considered to be the bridge that links Asia with Europe from a cultural and geographical standpoint.</p>
-                <p>Istanbul is located partly in Asia and the other part in Europe. Its geographical position as well as its rich 
+                <p class="explanation">Istanbul is located partly in Asia and the other part in Europe. Its geographical position as well as its rich 
                     history are responsible for a fascinating melting pot of cultures. Tourists are flocking to experience this 
                     magical city full of contrasts for themselves, making it the 5th most popular tourist destination in the world.</p>
-                <p>Istanbul offers an unforgettable experience for its travelers, with its colorful daily city life and dynamic 
+                <p class="explanation">Istanbul offers an unforgettable experience for its travelers, with its colorful daily city life and dynamic 
                     nightlife. The beautiful silhouette of the city combines historical sites and monuments such as Roman aqueducts, 
                     Byzantine churches, Venetian towers, Ottoman palaces from the Byzantine, Ottoman and Turkish periods.</p>
-                <p>And the skyline covers monumental minarets with skyscrapers and plazas. 
+                <p class="explanation">And the skyline covers monumental minarets with skyscrapers and plazas. 
                     And especially the Historical Peninsula and the Bosphorus will make you deeply fall in love with the city.</p>
-                <p>Istanbul is also one of the most lively metropolises in the world (having more than 15 million residents) that 
+                <p class="explanation">Istanbul is also one of the most lively metropolises in the world (having more than 15 million residents) that 
                     offers variety of intercontinental events, international film, music and theater festivals, international 
                     biennials, and more than 80 museums and many art galleries showcase all the culture, arts and history; including 
                     painting, sculpture, photography and more.</p>
-                <p>Istanbul is one of the world's great cities. There are so many wonderful reasons why you should visit this city. 
+                <p class="explanation">Istanbul is one of the world's great cities. There are so many wonderful reasons why you should visit this city. 
                     Istanbul is old, dating back thousands of years, and with that, there are many historical places to visit. 
                     Istanbul is gorgeous, with its assortment of mosques and their colorful tile work and dramatic architecture. 
                     Istanbul is charming and finally, 
@@ -218,12 +221,12 @@
         <div>
             <div id="Izmir">
                 <h2>IZMIR</h2>
-                <p>Izmir is Turkey's third-largest city and one of the oldest settlements in the Mediterranean sea region. 
+                <p class="explanation">Izmir is Turkey's third-largest city and one of the oldest settlements in the Mediterranean sea region. 
                     With over 8,000 years of ancient history evident in excavations of archaeological sites and monuments 
                     (one that was even rebuilt by Alexander the Great), 
                     Izmir not only boasts many fascinating cultural heritage sights, but also a lovely coastal climate, 
                     outdoors opportunities, and a unique local gastronomy. .</p>
-                <p>As an international port city, Izmir's ancient, multi-layered history has been shaped by cross-cultural 
+                <p class="explanation">As an international port city, Izmir's ancient, multi-layered history has been shaped by cross-cultural 
                     influences such as: local Anatolian tribes, Ionians, Romans, Persians, Greeks, Turks and Ottomans, 
                     Sephardic Jews, Armenians and Levantines (Europeans of British, Italian and French descent). 
                     Some of the famous places are in Izmir :</p>
@@ -280,9 +283,9 @@
         <div>
             <div id="Antalya">
                 <h2>ANTALYA</h2>
-                <p>Antalya is a resort city with beautiful beaches, impressive hotels, historic sites, 
+                <p class="explanation">Antalya is a resort city with beautiful beaches, impressive hotels, historic sites, 
                     and a yacht-filled old Roman harbor. All reasons that make it a worth visiting destination.</p>
-                <p>Antalya's biggest positive is its beautiful location on the Mediterranean. 
+                <p class="explanation">Antalya's biggest positive is its beautiful location on the Mediterranean. 
                     The views over the sea and the mountains down the coast are phenomenal. 
                     If you're in Antalya and you're on vacation for 3 -7 days that's probably all you need. 
                     The Old town is charming and has lots of touristy stores and restaurants. Make no mistake, 
@@ -359,12 +362,12 @@
         <div>
             <div id="Nevsehir">
                 <h2>NEVSEHIR</h2>
-                <p>The province of Nevsehir is one of the major cities of Cappadocia Region and displays a beautiful 
+                <p class="explanation">The province of Nevsehir is one of the major cities of Cappadocia Region and displays a beautiful 
                         combination of nature and history. The geographic movements had formed the fairy chimneys and during 
                         the historical development process, mankind had settled and inhabited these natural wonders, fairy chimneys 
                         and carved houses and churches inside these formations and adorned these settlements with frescos, carrying 
                         the traces of the thousands of years of their civilizations.</p>
-                <p>Nevsehir makes a great central base for exploring the surrounding area and its many underground cities 
+                <p class="explanation">Nevsehir makes a great central base for exploring the surrounding area and its many underground cities 
                         and countless fairy chimneys. Founded as Nyssa by the Hittites more than 3,000 years ago, Nevsehir has 
                         historical attractions from many eras, including the ruins of the Ottoman citadel overlooking the city and 
                         the 18th-century Kursunlu mosque in the Damat Ibrahim Pasha complex. Nevsehir Museum, one of Turkey's finest, 
@@ -453,10 +456,10 @@
         <div>
             <div id="Mugla">
                 <h2>MUGLA</h2>
-                <p>Mugla is the ideal destination for those who want everything at once. It was one of the many ancient cities 
+                <p class="explanation">Mugla is the ideal destination for those who want everything at once. It was one of the many ancient cities 
                     of the Caria region, todays Aegean region of Turkey. The most beautiful holiday resorts of Bodrum, 
                     Marmaris, Datca, Fethiye, Dalyan and many others are all within the borders of Mugla province.</p>
-                <p>There are many quality holiday villages, comfortable hotels and hospitable guest houses in Mugla and here you may enjoy 
+                <p class="explanation">There are many quality holiday villages, comfortable hotels and hospitable guest houses in Mugla and here you may enjoy 
                     every type of holiday, except for winter sports. The landscape is perfectly mingled with dozens of historical sites, 
                     such as Labranda, Lagina, Caunos, Euromos, Iassos and Stratonikea, bearing the traces of past civilizations of Anatolia. 
                     The beaches are available for any type of water sport, as unspoiled bays and clear waters await you in Mugla, such as in 
@@ -582,9 +585,17 @@
                     <div class="imageplace">Saklikent Canyon</div>
                 </div>
             </div>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><strong>&#8593;</strong></button>
+
+
         </div>
         <div class="clean"></div>
     </div>
-    <footer><p class="footer">© Copyright Code First Girls 2022</p></footer>
+
+    <footer><div class="footer">© Copyright Code First Girls 2022</div></footer>
+
+    <script src="topup.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>

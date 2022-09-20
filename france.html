@@ -6,60 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>France</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
 </head>
 <body> 
-    <div><img class="img-logo" src="travel logo.png" alt="Travel Logo" style="width:250px;height:100px">
-        <button type="button" style="float: right;">Search</button>
-        <input type="text" placeholder="Search" style="float: right;" >
+    <div><img class="img-logo" src="travel-logo.png" alt="Travel Logo" style="width:430px;height:100px">
+        <button type="button" style="float: right;" onclick="doSearch(document.getElementById('inputsearch').value)">Search</button>
+        <input id="inputsearch" type="text" placeholder="Search" style="float: right;" >
     </div>
 
     <div class="navbar">
-        <a class="link" href="index.html">Main Page</a>
+        <a class="link" href="index.html">Home</a>
 
         <div class="dropdown">
             <button class="dropbtn"><a href="turkey.html">Turkey</a></button>
             <div class="dropdown-content">
-                    <a href="#Istanbul">Istanbul</a>
-                    <a href="#Izmir">Izmir</a>
-                    <a href="#Antalya">Antalya</a>
-                    <a href="#Nevsehir">Nevsehir</a>
-                    <a href="#Mugla">Mugla</a>
+                    <a href="turkey.html#Istanbul">Istanbul</a>
+                    <a href="turkey.html#Izmir">Izmir</a>
+                    <a href="turkey.html#Antalya">Antalya</a>
+                    <a href="turkey.html#Nevsehir">Nevsehir</a>
+                    <a href="turkey.html#Mugla">Mugla</a>
             </div>
         </div>
 
         <div class="dropdown">
             <button class="dropbtn"><a href="france.html">France</a></button>
             <div class="dropdown-content">
-                <a href="#Paris">Paris</a>
-                <a href="#Nice">Nice</a>
-                <a href="#Versailles">Versailles</a>
-                <a href="#Bordeaux">Bordeaux</a>
-                <a href="#Marseilles">Marseilles</a>
+                <a href="france.html#Paris">Paris</a>
+                <a href="france.html#Nice">Nice</a>
+                <a href="france.html#Versailles">Versailles</a>
+                <a href="france.html#Bordeaux">Bordeaux</a>
+                <a href="france.html#Marseilles">Marseilles</a>
             </div>
         </div>
 
          <div class="dropdown">
             <button class="dropbtn"><a href="italy.html">Italy</a></button>
             <div class="dropdown-content">
-                <a href="#Rome">Rome</a>
-                <a href="#Venice">Venice</a>
-                <a href="#Florence">Florence</a>
-                <a href="#Milan">Milan</a>
-                <a href="#Capri">Capri</a>
+                <a href="italy.html#Rome">Rome</a>
+                <a href="italy.html#Venice">Venice</a>
+                <a href="italy.html#Florence">Florence</a>
+                <a href="italy.html#Milan">Milan</a>
+                <a href="italy.html#Capri">Capri</a>
             </div>
         </div>
 
         <div class="dropdown">
             <button class="dropbtn"><a href="theUSA.html">The USA</a></button>
             <div class="dropdown-content">
-                <a href="#NewYorkCity">New York City</a>
-                <a href="#LasVegas">Las Vegas</a>
-                <a href="#SanFrancisco">San Francisco</a>
-                <a href="#Washington">Washington, D.C.</a>
-                <a href="#LosAngeles">Los Angeles</a>
-                <a href="#Miami">Miami</a>
+                <a href="theUSA.html#NewYorkCity">New York City</a>
+                <a href="theUSA.html#LasVegas">Las Vegas</a>
+                <a href="theUSA.html#SanFrancisco">San Francisco</a>
+                <a href="theUSA.html#Washington">Washington, D.C.</a>
+                <a href="theUSA.html#LosAngeles">Los Angeles</a>
+                <a href="theUSA.html#Miami">Miami</a>
             </div>
         </div>
+        <a class="link" href="contact-us.html">Contact Us</a>
     </div>
 
 
@@ -68,11 +70,11 @@
             shape. Each corner of France has its own unique character: the rugged and outdoorsy French Alps; sun-drenched and 
             slow-paced Provence; the glamorous and gorgeous Côte d'Azur coastline; and idyllic Alsace, a pastoral region where 
             storybook hamlets are tucked away in the vine-covered rolling hills.</p>
-        <p> Paris and Versailles are must-see destinations for a first trip to France. Other classic travel itineraries include 
+        <p class="explanation"> Paris and Versailles are must-see destinations for a first trip to France. Other classic travel itineraries include 
             stops at fashionable seaside resorts, fairy-tale castles, and glorious Gothic cathedrals.</p>
-        <p> More off-the-beaten-path experiences are found in the countryside, such as at farmhouses in Burgundy, fishing 
+        <p class="explanation"> More off-the-beaten-path experiences are found in the countryside, such as at farmhouses in Burgundy, fishing 
             villages in Brittany, and quaint towns in the forests of the Pyrenees Mountains.</p>
-        <p>From cultured cities to pristine nature sites, France offers endless tourist attractions. 
+        <p class="explanation">From cultured cities to pristine nature sites, France offers endless tourist attractions. 
             Discover this fascinating and diverse country with our list of the best places to visit in France.
         </p>
     </div>
@@ -130,19 +132,19 @@
         <div>
             <div id="Paris">
                 <h2>PARIS</h2>
-                <p>Whether sunshine is sparkling on the café terraces of Boulevard Saint-Germain, or melancholy mists of the Seine 
+                <p class="explanation">Whether sunshine is sparkling on the café terraces of Boulevard Saint-Germain, or melancholy mists of the Seine 
                     River are shrouding Notre-Dame Cathedral, Paris has a way of romancing visitors. The love affair may begin with a first 
                     glimpse of the Eiffel Tower, then continue with strolls along the wide tree-lined avenues and in lavish formal gardens.</p>
-                <p>Visitors are seduced by the city's beauty. Each neighborhood (quartier) reveals its own distinctive appeal. The Latin 
+                <p class="explanation">Visitors are seduced by the city's beauty. Each neighborhood (quartier) reveals its own distinctive appeal. The Latin 
                     Quarter is a captivating labyrinth of medieval pedestrian streets and narrow alleyways. The fashionable Champs-Élysées 
                     buzzes with energy and panache. Outside the center of Paris, Montmartre brims with old-world village charm and flaunts its 
                     Bohemian past.</p>
-                <p>After seeing the museums and monuments, tourists should seek out the small surprises, like family-run bistros with 
+                <p class="explanation">After seeing the museums and monuments, tourists should seek out the small surprises, like family-run bistros with 
                     handwritten menus; cobblestone lanes full of quaint boutiques; secluded squares adorned with flowing fountains; and 
                     elegant tea salons, where dainty jewel-like desserts beckon from glass-covered pastry cases.</p>
-                <p>In every hidden corner and at all the famous sites, Paris casts a spell of enchantment. One visit may inspire a 
+                <p class="explanation">In every hidden corner and at all the famous sites, Paris casts a spell of enchantment. One visit may inspire a 
                     lifelong passion.</p>
-                <p>Discover what makes the City of Light so alluring and learn about the fascinating places to explore 
+                <p class="explanation">Discover what makes the City of Light so alluring and learn about the fascinating places to explore 
                     with our list of the top tourist attractions in Paris.Some of the famous places are in Paris :</p>
             </div>
 
@@ -213,13 +215,13 @@
         <div>
             <div id="Nice">
                 <h2>NICE</h2>
-                <p>It is easy to understand why Impressionist painters were drawn to Nice. With its sunny weather and stunning 
+                <p class="explanation">It is easy to understand why Impressionist painters were drawn to Nice. With its sunny weather and stunning 
                     Mediterranean scenery, this picturesque city resembles a pastel painting. Surrounded by the serene blue waters of the 
                     Baie des Anges and sheltered by the foothills of the Maritime Alps, Nice has a mild climate year-round.</p>
-                <p>The city was originally discovered in the 1820s by British aristocrats as a winter resort. Today, it is still a popular 
+                <p class="explanation">The city was originally discovered in the 1820s by British aristocrats as a winter resort. Today, it is still a popular 
                     vacation destination. Considered the center of the French Riviera, Nice is the perfect starting point to explore the 
                     dazzling Côte d'Azur.</p>
-                <p>A vacation based in Nice offers the chance to enjoy seaside splendor and to soak up the vibrant urban energy. 
+                <p class="explanation">A vacation based in Nice offers the chance to enjoy seaside splendor and to soak up the vibrant urban energy. 
                     The ambience of a real city pervades the busy avenues, squares, and pedestrian alleyways of Nice, while the vibes of a 
                     beach resort town give Nice a special quality.
                     Some of the famous places are in Nice :</p>
@@ -276,13 +278,13 @@
         <div>
             <div id="Versailles">
                 <h2>VERSAILLES</h2>
-                <p>In an age of absolute monarchy, the Château de Versailles was designed to dazzle. This awe-inspiring palace became 
+                <p class="explanation">In an age of absolute monarchy, the Château de Versailles was designed to dazzle. This awe-inspiring palace became 
                     Louis XIV's showpiece, his symbol of power. After all, he was the "Sun King" around whom the world revolved. 
                     His reign would become known as Le Grand Siècle (The Great Century).</p>
-                <p>Louis XIV spent over 50 years reconstructing, expanding, and embellishing the country estate that he inherited 
+                <p class="explanation">Louis XIV spent over 50 years reconstructing, expanding, and embellishing the country estate that he inherited 
                     from his father, Louis XIII. The original small château (a former hunting lodge) at Versailles was eventually 
                     transformed into Europe's most magnificent palace.</p>
-                <p>Versailles, just outside Paris, is a majestic French city with deep royal roots, renowned internationally for 
+                <p class="explanation">Versailles, just outside Paris, is a majestic French city with deep royal roots, renowned internationally for 
                     its palace and gardens. The journey from the French capital can be made in under an hour and, with a rich 
                     history and some of the country's most spectacular architecture, it's well worth the trip. 
                     Some of the famous places are in Versailles :</p>
@@ -339,13 +341,13 @@
         <div>
             <div id="Bordeaux">
                 <h2>BORDEAUX</h2>
-                <p>With its urban elegance and provincial charm, Bordeaux is an appealing tourist destination in Southwest France. 
+                <p class="explanation">With its urban elegance and provincial charm, Bordeaux is an appealing tourist destination in Southwest France. 
                     Bordeaux is called the "Port of the Moon" because of its romantic location on a crescent-shaped bend of the 
                     Garonne River. In this splendid setting that allowed trade to flourish, the city has a rich cultural heritage 
                     dating back to antiquity.</p>
-                <p>UNESCO declared Bordeaux a World Heritage Site in 1998 thanks to the city's wealth of architectural treasures. 
+                <p class="explanation">UNESCO declared Bordeaux a World Heritage Site in 1998 thanks to the city's wealth of architectural treasures. 
                     More than 350 buildings are classified as historical monuments.</p>
-                <p>Despite its astounding array of impressive landmarks, Bordeaux is not a tourist trap. It's a vibrant working 
+                <p class="explanation">Despite its astounding array of impressive landmarks, Bordeaux is not a tourist trap. It's a vibrant working 
                     city with bustling cafés, a happening restaurant scene, traditional open-air markets, and a booming high-tech industry.
                     Some of the famous places are in Bordeaux :</p>
             </div>
@@ -401,12 +403,12 @@
         <div>
             <div id="Marseilles">
                 <h2>MARSEILLES</h2>
-                <p>With a busy harbor and a vibrant urban energy, Marseilles appeals to visitors seeking an authentic tourist experience. 
+                <p class="explanation">With a busy harbor and a vibrant urban energy, Marseilles appeals to visitors seeking an authentic tourist experience. 
                     This lively cosmopolitan city is France's oldest and the second largest after Paris.</p>
-                <p>The city has a distinctly Mediterranean ambience, from its red-tile roofed houses to the fishing boats in its port. 
+                <p class="explanation">The city has a distinctly Mediterranean ambience, from its red-tile roofed houses to the fishing boats in its port. 
                     Everywhere in Marseilles, visitors are close to the serene blue waters, whether walking along a charming old street 
                     with a view, or feeling the refreshing sea breeze.</p>
-                <p>The city's colorful, multiethnic heritage also makes Marseilles a fascinating place to visit. Considered the bridge 
+                <p class="explanation">The city's colorful, multiethnic heritage also makes Marseilles a fascinating place to visit. Considered the bridge 
                     between Europe and North Africa, Marseilles is home to a sizable emigrant population from Algeria. It's possible to
                      find traditional Arab souks as easily as a classic French bouillabaisse.
                     Some of the famous places are in Marseilles :</p>
@@ -456,9 +458,11 @@
                     <div class="imageplace">La Panier</div>
                 </div>
             </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><strong>&#8593;</strong></button>
         </div>
         <div class="clean"></div>
     </div>
-    <footer><p class="footer">© Copyright Code First Girls 2022</p></footer>
+    <footer><div class="footer">© Copyright Code First Girls 2022</div></footer>
+    <script src="topup.js"></script>
 </body>
 </html>
