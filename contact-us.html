@@ -7,7 +7,9 @@
   <title>Contact Us</title>
   <link rel="stylesheet" href="index.css">
   <link rel="shortcut icon" href="icon.png" type="image/x-icon" /> 
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="topup.js"></script>
+
 </head>
 
 <body> 
@@ -106,14 +108,14 @@
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write your messagge to here." style="height:200px" required></textarea>
     
-        <input id ="contactsubmit" type="submit" value="Submit" onclick="contactform()">    
+        <button id ="contactsubmit" type="button" onclick="contactform();">Submit</button>
       </form>
 
     </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><strong>&#8593;</strong></button>
+    <button onclick="topFunction();" id="myBtn" title="Go to top"><strong>&#8593;</strong></button>
   </div>
   <footer><div class="footer">© Copyright Code First Girls 2022</div></footer>
-  <script src="topup.js"></script>
+ 
   <script src="contact.js"></script>
 
 </body>
