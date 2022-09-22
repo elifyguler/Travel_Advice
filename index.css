@@ -1,12 +1,46 @@
 .img-logo{
   padding-left: 175px;
+  width: 430px;
+  height: 100px;
 }
+
+/* PHONE VERSION */
+@media only screen and
+(min-width: 320px) {
+.img-logo {padding-left:0px;width: 180px;height: 60px;}
+}
+/* TABLET VERSION */
+@media only screen and
+(min-width: 768px) {
+.img-logo {padding-left: 50px;width: 250px;height: 70px;}
+}
+/* DESKTOP VERSION */
+@media only screen and
+(min-width: 980px) {
+.img-logo{ padding-left: 175px;width: 430px;height: 100px;}
+}
+
 
 #inputsearch {
   margin-right: 10px;
   padding: 7px;
   margin-top: 35px;
   font-family: 'Kalam', cursive;
+}
+
+@media only screen and
+(min-width: 320px) {
+#inputsearch{padding:1px;}
+}
+/* TABLET VERSION */
+@media only screen and
+(min-width: 768px) {
+#inputsearch{padding:7px}
+}
+/* DESKTOP VERSION */
+@media only screen and
+(min-width: 980px) {
+#inputsearch{ padding: 7px;}
 }
 
 .explanation{
@@ -26,6 +60,20 @@
   border-color:#6b9bae;
   font-family: 'Kalam', cursive;
   color:white;
+}
+@media only screen and
+(min-width: 320px) {
+.searchbutton {padding:3px;margin-right: 0px;}
+}
+/* TABLET VERSION */
+@media only screen and
+(min-width: 768px) {
+.searchbutton{padding:7px;margin-right: 50px;}
+}
+/* DESKTOP VERSION */
+@media only screen and
+(min-width: 980px) {
+.searchbutton{ padding: 7px; margin-right: 100px;}
 }
 
 .link{
