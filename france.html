@@ -7,18 +7,25 @@
     <title>France</title>
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body> 
+    
     <div><img class="img-logo" src="travel-logo.png" alt="Travel Logo" style="width:430px;height:100px">
-        <button type="button" style="float: right;" onclick="doSearch(document.getElementById('inputsearch').value)">Search</button>
+        <button class="searchbutton" type="button" style="float: right;" onclick="doSearch(document.getElementById('inputsearch').value)">Search</button>
         <input id="inputsearch" type="text" placeholder="Search" style="float: right;" >
     </div>
 
-    <div class="navbar">
+    <div class="clean"></div>
+    
+
+
+<div class="outnavbar">
+     <div class="navbar" id="myTopnav">
         <a class="link" href="index.html">Home</a>
 
         <div class="dropdown">
-            <button class="dropbtn"><a href="turkey.html">Turkey</a></button>
+            <button class="dropbtn"><a href="turkey.html">Turkey<i class="fa fa-caret-down"></i></a></button>
             <div class="dropdown-content">
                     <a href="turkey.html#Istanbul">Istanbul</a>
                     <a href="turkey.html#Izmir">Izmir</a>
@@ -29,7 +36,7 @@
         </div>
 
         <div class="dropdown">
-            <button class="dropbtn"><a href="france.html">France</a></button>
+            <button class="dropbtn"><a href="france.html">France<i class="fa fa-caret-down"></i></a></button>
             <div class="dropdown-content">
                 <a href="france.html#Paris">Paris</a>
                 <a href="france.html#Nice">Nice</a>
@@ -40,7 +47,7 @@
         </div>
 
          <div class="dropdown">
-            <button class="dropbtn"><a href="italy.html">Italy</a></button>
+            <button class="dropbtn"><a href="italy.html">Italy<i class="fa fa-caret-down"></i></a></button>
             <div class="dropdown-content">
                 <a href="italy.html#Rome">Rome</a>
                 <a href="italy.html#Venice">Venice</a>
@@ -51,7 +58,7 @@
         </div>
 
         <div class="dropdown">
-            <button class="dropbtn"><a href="theUSA.html">The USA</a></button>
+            <button class="dropbtn"><a href="theUSA.html">The USA<i class="fa fa-caret-down"></i></a></button>
             <div class="dropdown-content">
                 <a href="theUSA.html#NewYorkCity">New York City</a>
                 <a href="theUSA.html#LasVegas">Las Vegas</a>
@@ -62,7 +69,10 @@
             </div>
         </div>
         <a class="link" href="contact-us.html">Contact Us</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunctionNavbar()">&#9776;</a>
     </div>
+
+  </div>
 
 
     <div>
@@ -104,7 +114,7 @@
         </div>
 
         <div class="main-image">
-            <img src="images-france/eiffel-tower.jpg" alt="Eiffel Tower" style="width:525px;height:auto">
+            <img  class="responsiveimage" src="images-france/eiffel-tower.jpg" alt="Eiffel Tower">
         </div>
         <div class="popular-dishes">
             <ul> <h4>The Most Popular Dishes in France</h4>
@@ -464,5 +474,7 @@
     </div>
     <footer><div class="footer">© Copyright Code First Girls 2022</div></footer>
     <script src="topup.js"></script>
+  <script src="navbar.js"></script>
+
 </body>
 </html>

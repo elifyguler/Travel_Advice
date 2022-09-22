@@ -6,66 +6,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
   <link rel="stylesheet" href="index.css">
-  <link rel="shortcut icon" href="icon.png" type="image/x-icon" /> 
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-  <script src="topup.js"></script>
-
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body> 
+  
   <div><img class="img-logo" src="travel-logo.png" alt="Travel Logo" style="width:430px;height:100px">
+      <button class="searchbutton" type="button" style="float: right;" onclick="doSearch(document.getElementById('inputsearch').value)">Search</button>
+      <input id="inputsearch" type="text" placeholder="Search" style="float: right;" >
   </div>
 
-  <div class="navbar">
-    <a class="link" href="index.html">Home</a>
+  <div class="clean"></div>
+  
 
-    <div class="dropdown">
-      <button class="dropbtn"><a href="turkey.html">Turkey</a></button>
-      <div class="dropdown-content">
-        <a href="turkey.html#Istanbul">Istanbul</a>
-        <a href="turkey.html#Izmir">Izmir</a>
-        <a href="turkey.html#Antalya">Antalya</a>
-        <a href="turkey.html#Nevsehir">Nevsehir</a>
-        <a href="turkey.html#Mugla">Mugla</a>
+
+<div class="outnavbar">
+   <div class="navbar" id="myTopnav">
+      <a class="link" href="index.html">Home</a>
+
+      <div class="dropdown">
+          <button class="dropbtn"><a href="turkey.html">Turkey<i class="fa fa-caret-down"></i></a></button>
+          <div class="dropdown-content">
+                  <a href="turkey.html#Istanbul">Istanbul</a>
+                  <a href="turkey.html#Izmir">Izmir</a>
+                  <a href="turkey.html#Antalya">Antalya</a>
+                  <a href="turkey.html#Nevsehir">Nevsehir</a>
+                  <a href="turkey.html#Mugla">Mugla</a>
+          </div>
       </div>
-    </div>
 
-    <div class="dropdown">
-      <button class="dropbtn"><a href="france.html">France</a></button>
-      <div class="dropdown-content">
-        <a href="france.html#Paris">Paris</a>
-        <a href="france.html#Nice">Nice</a>
-        <a href="france.html#Lyon">Lyon</a>
-        <a href="france.html#Bordeaux">Bordeaux</a>
-        <a href="france.html#Marseilles">Marseilles</a>
+      <div class="dropdown">
+          <button class="dropbtn"><a href="france.html">France<i class="fa fa-caret-down"></i></a></button>
+          <div class="dropdown-content">
+              <a href="france.html#Paris">Paris</a>
+              <a href="france.html#Nice">Nice</a>
+              <a href="france.html#Versailles">Versailles</a>
+              <a href="france.html#Bordeaux">Bordeaux</a>
+              <a href="france.html#Marseilles">Marseilles</a>
+          </div>
       </div>
-    </div>
 
-    <div class="dropdown">
-      <button class="dropbtn"><a href="italy.html">Italy</a></button>
-      <div class="dropdown-content">
-        <a href="italy.html#Rome">Rome</a>
-        <a href="italy.html#Venice">Venice</a>
-        <a href="italy.html#Florence">Florence</a>
-        <a href="italy.html#Milan">Milan</a>
-        <a href="italy.html#Capri">Capri</a>
+       <div class="dropdown">
+          <button class="dropbtn"><a href="italy.html">Italy<i class="fa fa-caret-down"></i></a></button>
+          <div class="dropdown-content">
+              <a href="italy.html#Rome">Rome</a>
+              <a href="italy.html#Venice">Venice</a>
+              <a href="italy.html#Florence">Florence</a>
+              <a href="italy.html#Milan">Milan</a>
+              <a href="italy.html#Capri">Capri</a>
+          </div>
       </div>
-    </div>   
 
-    <div class="dropdown">
-      <button class="dropbtn"><a href="theUSA.html">The USA</a></button>
-      <div class="dropdown-content">
-        <a href="theUSA.html#NewYorkCity">New York City</a>
-        <a href="theUSA.html#LasVegas">Las Vegas</a>
-        <a href="theUSA.html#SanFrancisco">San Francisco</a>
-        <a href="theUSA.html#Washington">Washington, D.C.</a>
-        <a href="theUSA.html#LosAngeles">Los Angeles</a>
-        <a href="theUSA.html#Miami">Miami</a>
+      <div class="dropdown">
+          <button class="dropbtn"><a href="theUSA.html">The USA<i class="fa fa-caret-down"></i></a></button>
+          <div class="dropdown-content">
+              <a href="theUSA.html#NewYorkCity">New York City</a>
+              <a href="theUSA.html#LasVegas">Las Vegas</a>
+              <a href="theUSA.html#SanFrancisco">San Francisco</a>
+              <a href="theUSA.html#Washington">Washington, D.C.</a>
+              <a href="theUSA.html#LosAngeles">Los Angeles</a>
+              <a href="theUSA.html#Miami">Miami</a>
+          </div>
       </div>
-    </div>
-
-    <a class="link" href="contact-us.html">Contact Us</a>
+      <a class="link" href="contact-us.html">Contact Us</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunctionNavbar()">&#9776;</a>
   </div>
+
+</div>
     <div class="contact-text">
         <div class="ctext">Contact Us</div>
 
@@ -117,6 +124,6 @@
   <footer><div class="footer">© Copyright Code First Girls 2022</div></footer>
  
   <script src="contact.js"></script>
-
+  <script src="navbar.js"></script>
 </body>
 </html>
