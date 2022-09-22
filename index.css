@@ -229,7 +229,7 @@ height: 700px;
 /* PHONE VERSION */
 @media only screen and
 (min-width: 320px) {
-.responsiveimage {width: 420px;height: 560px;}
+.responsiveimage {width: 360px;height: 500px;}
 }
 /* TABLET VERSION */
 @media only screen and
@@ -452,7 +452,7 @@ ul{
   /* PHONE VERSION */
   @media only screen and
   (min-width: 320px) {
-  .demo {width:98px; height: 70px;}
+  .demo {width: 70px; height: 70px;}
   
   }
   /* TABLET VERSION  */
@@ -487,7 +487,7 @@ font-size: 17px;
 text-align: left;
 color:black;
 font-family: 'Kalam', cursive;
-width: 45%;
+
 float:right;
 margin-right: 10px;
 
@@ -506,7 +506,7 @@ height:550px;
   /* PHONE VERSION */
   @media only screen and
   (min-width: 320px) {
-  .homeimages {width:390px; height: 286px;}
+  .homeimages {width:365px; height: 266px;}
   }
   @media only screen and
   (min-width: 500px) {
@@ -520,7 +520,17 @@ height:550px;
     (min-width: 980px) {
       .home-content{clear: right;float: right;width: 700px;}
     }  
-    
+    @media only screen and
+    (width < 500px) {
+      .home-content{clear: both;float: left;}
+      .popular-place, .main-image, .contents{ margin-left: 0;}
+      .contents{max-width: 100%;}
+    }       
+    @media only screen and
+    (width > 500px) {
+      .searchbuttondiv{margin-top: -70px;padding-bottom: 90px;}
+      .contactus{width:700px;margin-left: auto; margin-right: auto;}
+    }      
   /* TABLET VERSION  */
   @media only screen and
   (min-width: 768px) {
@@ -578,8 +588,6 @@ border-radius: 5px;
 background-color:rgb(235, 230, 229);
 padding: 20px;
 font-family: 'Kalam', cursive;
-width: 50%;
-margin-left : 25%
 
 }
 .contact-text{
