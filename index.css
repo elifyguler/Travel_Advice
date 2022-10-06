@@ -320,7 +320,7 @@ ul{
 
 .footer{
   background-color:rgb(228, 173, 156);
-  font-size: small;
+  font-size: 14px;
   font-family: 'Kalam', cursive;
   display: flex;            
   justify-content: center;            
